@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+
+:root {
+  --darkgrey: #4d544f;
+  --mediumgrey: rgb(74, 79, 76);
+  --lightgrey: #bdbdbd;
+  --textgreen: #10ad3a;
+}
+
+
+.header {
+  background-color: var(--darkgrey);
+
+  height: 8rem;
+}
+
+.headline {
+  text-align: center;
+  text-decoration: none; 
+   color: var(--textgreen);
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 5px;
+}
+.navbar a:hover {
+  color: var(--textgreen);
+  text-decoration: none;
+  box-shadow: 0px 0px 5px var(--textgreen);
+  background-color: var(--mediumgrey);
+}

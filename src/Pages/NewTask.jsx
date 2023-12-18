@@ -17,7 +17,7 @@ const [type, setType] = useState("");
         <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder='Description'/>
         <input type="number" value={time} onChange={(e) => setTime(e.target.value)} placeholder='time'/>
         <select value={type} onChange={(e) => setType(e.target.value)}>
-            <option value="">Välj kategori</option>
+            <option value="none">Välj kategori</option>
             <option value="Hushållssysslor">Hushållssysslor</option>
             <option value="Aktivitet">Aktivitet</option>
             <option value="Plugg">Plugg</option>
@@ -28,6 +28,10 @@ const [type, setType] = useState("");
             const uppdated = props.tasks;
             uppdated.push({id: uppdated.length + 1 , titel, description, time, type, done: false});
             props.setTasks(uppdated);
+            setTitel("");
+            setDescription("");
+            setTime("");
+            setType("none");
         }}>Lägg till task</button>
     </div>
     </>

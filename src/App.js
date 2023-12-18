@@ -40,19 +40,19 @@ function App() {
       id: 1,
       Title: "Borsta tänderna",
       streakValue: 123,
-      priority: "High",
+      priority: 3,
     },
     {
       id: 2,
       Title: "Bädda sängen",
       streakValue: 0,
-      priority: "Medium",
+      priority: 2,
     },
     {
       id: 3,
       Title: "Plugga",
       streakValue: 0,
-      priority: "Low",
+      priority: 1,
     },
   ]);
 

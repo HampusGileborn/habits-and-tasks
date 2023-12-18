@@ -73,3 +73,14 @@ h1 {
 .habitPage {
   text-align: center;
 }
+
+.lists {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.listHome {
+}
+
+.listItem {
+}

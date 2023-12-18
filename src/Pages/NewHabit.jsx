@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function NewHabit(props) {
+  // const [title, setTitle] = useState('');
+  // const [streakValue, setStreakValue] = useState('');
+  // const [priority, setPriority] = useState('');
+  
   return (
+
     <div className='formHabit'>
       <p>Create new Habit</p>
       <form action="">
@@ -12,9 +17,9 @@ function NewHabit(props) {
         </div>
         <select>
           <option value="" disabled hidden>Change Priority</option> 
-          <option value="Low Priority">Low Priority</option>
-          <option value="Medium Priority">Medium Priority</option>
-          <option value="High Priority">High Priority</option>
+          <option value="1">Low Priority</option>
+          <option value="2">Medium Priority</option>
+          <option value="3">High Priority</option>
         </select>
         <button>Add Habit</button>
       </form>

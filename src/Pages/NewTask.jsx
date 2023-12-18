@@ -26,7 +26,7 @@ const [type, setType] = useState("");
     <div>
         <button onClick={() => {
             const uppdated = props.tasks;
-            uppdated.push({id: uppdated.length + 1 , titel, description, time, type});
+            uppdated.push({id: uppdated.length + 1 , titel, description, time, type, done: false});
             props.setTasks(uppdated);
         }}>Lägg till task</button>
     </div>

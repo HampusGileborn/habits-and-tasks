@@ -34,13 +34,6 @@ function App() {
         description: "Kolla på YouTube",
         time: 2 + " minuter",
         type: "plugg",
-      },
-      {
-        id: 4,
-        titel: "Plugga",
-        description: "Skriv kod",
-        time: 30 + " minuter",
-        type: "plugg",
       }
     ]);
   }, []);

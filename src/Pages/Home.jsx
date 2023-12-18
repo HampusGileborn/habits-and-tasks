@@ -27,9 +27,9 @@ function Home(props) {
       <div>
         {props.habits.slice(0, 3).map((habits) => (
           <>
-            <h2>{habits.Title}</h2>
-            <h3>{habits.streakValue}</h3>
-            <h3>{habits.priority}</h3>
+            <h2>Title: {habits.Title}</h2>
+            <h3>Streak: {habits.streakValue} days</h3>
+            <h3>Priority: {habits.priority}</h3>
           </>
         ))}
       </div>

@@ -66,7 +66,7 @@ function App() {
           path="/NewTask"
           element={<NewTask tasks={tasks} setTasks={setTasks} />}
         />
-        <Route path="/Habits" element={<Habits />} />
+        <Route path="/Habits" element={<Habits habits={habits} />} />
         <Route
           path="/NewHabit"
           element={<NewHabit habits={habits} setHabits={setHabits} />}

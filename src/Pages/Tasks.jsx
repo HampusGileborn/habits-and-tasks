@@ -13,7 +13,7 @@ function Tasks(props) {
 
   const setDone = (id, value) => {
     const tasks = props.tasks.map((task) => {
-      if (task.id == id) {
+      if (task.id === id) {
         task.done = value;
       }
 
@@ -23,7 +23,7 @@ function Tasks(props) {
   };
 
   const removeTask = (id) => {
-    const tasks = props.tasks.filter((e) => e.id != id);
+    const tasks = props.tasks.filter((e) => e.id !== id);
     props.setTasks(tasks);
   };
   return (
@@ -31,7 +31,7 @@ function Tasks(props) {
       <div id="notDone">
         <h2>Att Göra</h2>
         {props.tasks
-          .filter((e) => e.done == false)
+          .filter((e) => e.done === false)
           .map((task) => (
             <Task task={task} setDone={setDone} removeTask={removeTask} />
           ))}
@@ -39,7 +39,7 @@ function Tasks(props) {
       <div id="done">
         <h2>Gjort</h2>
         {props.tasks
-          .filter((e) => e.done == true)
+          .filter((e) => e.done === true)
           .map((task) => (
             <Task task={task} setDone={setDone} removeTask={removeTask} />
           ))}

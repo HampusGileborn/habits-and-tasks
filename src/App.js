@@ -18,6 +18,7 @@ function App() {
       description: "plocka undan kläder och damsug",
       time: "30 minuter",
       type: "hushållssysslor",
+      done: false,
     },
     {
       id: 2,
@@ -25,6 +26,7 @@ function App() {
       description: "Gå till gymmet och kör ben",
       time: "100 minuter",
       type: "aktivitet",
+      done: false,
     },
     {
       id: 3,
@@ -32,6 +34,7 @@ function App() {
       description: "Kolla på YouTube",
       time: "2 minuter",
       type: "plugg",
+      done: true,
     },
   ]);
   
@@ -64,7 +67,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home tasks={tasks} habits={habits} />} />
-        <Route path="/Tasks" element={<Tasks />} />
+        <Route path="/Tasks" element={<Tasks tasks={tasks} setTasks={setTasks}/>} />
         <Route
           path="/NewTask"
           element={<NewTask tasks={tasks} setTasks={setTasks} />}

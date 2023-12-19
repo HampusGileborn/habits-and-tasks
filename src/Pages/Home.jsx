@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home(props) {
   console.log(props.tasks.sort((a, b) => b.id - a.id));
@@ -21,6 +22,7 @@ function Home(props) {
                 <h3>{task.type}</h3>
               </div>
             ))}
+            <Link to={"/Tasks"}>Se fler</Link>
           </div>
         </div>
         <div className="listHome">

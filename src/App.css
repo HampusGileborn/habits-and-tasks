@@ -84,3 +84,8 @@ h1 {
 
 .listItem {
 }
+
+.taskList {
+  display: flex;
+  justify-content: space-around;
+}

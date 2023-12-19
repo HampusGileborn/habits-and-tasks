@@ -42,6 +42,7 @@ function Home(props) {
                 </h3>
               </div>
             ))}
+            <Link to={"/Habits"}>Se fler</Link> 
           </div>
         </div>
       </div>

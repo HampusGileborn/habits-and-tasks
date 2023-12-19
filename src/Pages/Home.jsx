@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home(props) {
   console.log(props.tasks.sort((a, b) => b.id - a.id));
-  console.log(props.habits.sort((a, b) => b.id - a.id));
+  console.log(props.habits.sort((a, b) => b.priority - a.priority));
 
   return (
     <>
@@ -30,7 +30,7 @@ function Home(props) {
           <div>
             {props.habits.slice(0, 3).map((habits) => (
               <div className="listItem" key={habits.id}>
-                <h2>Title: {habits.Title}</h2>
+                <h2>{habits.Title}</h2>
                 <h3>Streak: {habits.streakValue} days</h3>
                 <h3>
                   Priority:{" "}

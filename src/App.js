@@ -58,6 +58,9 @@ function App() {
       priority: 1,
     },
   ]);
+  const addHabit = (newHabit) => {
+    setHabits([...habits, newHabit]);
+  }
 
   return (
     <div>
@@ -72,7 +75,7 @@ function App() {
         <Route path="/Habits" element={<Habits habits={habits} />} />
         <Route
           path="/NewHabit"
-          element={<NewHabit habits={habits} setHabits={setHabits} />}
+          element={<NewHabit addHabit={addHabit}/>}
         />
         <Route path="/Friends" element={<Friends />} />
       </Routes>

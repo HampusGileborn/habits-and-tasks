@@ -14,6 +14,7 @@ function Habits(props) {
     });
     props.setHabits(updatedHabits);
   };
+
   const decreaseStreak = (id) => {
     const updatedHabits = props.habits.map((habit) => {
       if (habit.id === id) {
@@ -48,25 +49,21 @@ function Habits(props) {
   return (
     <>
       {props.habits.map((habits) => (
-        <>
-          <div key={habits.id} className="habitItem">
-            <h2>{habits.Title}</h2>
-            <h2>Streak: {habits.streakValue} days in a row</h2>
-            <button onClick={() => decreaseStreak(habits.id)}>-1</button>
-            <button onClick={() => resetStreak(habits.id)}>Reset</button>
-            <button onClick={() => increaseStreak(habits.id)}>+1</button>
-
-            <h2>
-              {" "}
-              {habits.priority === 1
-                ? "Low"
-                : habits.priority === 2
-                ? "Medium"
-                : "High"}{" "}
-              Priority
-            </h2>
-          </div>
-        </>
+        <div key={habits.id} className="habitItem">
+          <h2>Title: {habits.Title}</h2>
+          <h2>Streak: {habits.streakValue} days in a row</h2>
+          <button onClick={() => decreaseStreak(habits.id)}>-1</button>
+          <button onClick={() => resetStreak(habits.id)}>Reset</button>
+          <button onClick={() => increaseStreak(habits.id)}>+1</button>
+          <h2>
+            Priority:{" "}
+            {habits.priority === 1
+              ? "Low"
+              : habits.priority === 2
+              ? "Medium"
+              : "High"}
+          </h2>
+        </div>
       ))}
     </>
   );

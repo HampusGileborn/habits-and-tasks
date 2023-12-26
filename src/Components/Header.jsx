@@ -10,7 +10,7 @@ function Header() {
         <Link to={"/NewTask"}>New Task</Link>
         <Link to={"/Habits"}>Habits</Link>
         <Link to={"/NewHabit"}>New Habit</Link>
-        <Link to={"/Friends"}>Friends</Link>
+        {/* <Link to={"/Friends"}>Friends</Link> */}
       </nav>
     </div>
   );

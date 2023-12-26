@@ -58,7 +58,7 @@ const uppdate = () => {
         </select>
     </div>
     <div>
-        <Link to={"/Tasks"} onClick={() => uppdate()}>Lägg till task</Link>
+        <Link to={"/Tasks"} onClick={() => uppdate()}>Uppdatera task</Link>
     </div>
     </>
   )

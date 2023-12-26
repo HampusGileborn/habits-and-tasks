@@ -8,6 +8,7 @@ import Habits from "./Pages/Habits";
 import NewHabit from "./Pages/NewHabit";
 import Friends from "./Pages/Friends";
 import { useEffect, useState } from "react";
+import EditTask from "./Pages/EditTask";
 
 function App() {
 
@@ -78,6 +79,7 @@ function App() {
           element={<NewHabit addHabit={addHabit}/>}
         />
         <Route path="/Friends" element={<Friends />} />
+        <Route path="/EditTask/:id" element={<EditTask tasks={tasks} setTasks={setTasks}/>} />
       </Routes>
     </div>
   );

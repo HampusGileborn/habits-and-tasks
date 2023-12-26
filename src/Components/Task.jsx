@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 function Task({task, setDone, removeTask}) {
   return (
@@ -16,7 +17,7 @@ function Task({task, setDone, removeTask}) {
               <button onClick={() => {
                 removeTask(task.id)
               }}>Ta bort</button>
-              <button>Redigera</button>
+              <Link to={"/EditTask/" + task.id}>Redigera</Link>
             </div>
           </div>
   )

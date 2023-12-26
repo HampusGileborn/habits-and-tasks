@@ -14,6 +14,13 @@ const [type, setType] = useState("");
     </div>
     <div>
         <input type="text" value={titel} onChange={(e) => setTitel(e.target.value)} placeholder='Titel'/>
+        <button onClick={async () => {
+            let response= await fetch("https://www.boredapi.com/api/activity");
+            let json = await response.json();
+            setTitel(json.activity);
+        }
+
+        }>Random Task</button>
         <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder='Description'/>
         <input type="number" value={time} onChange={(e) => setTime(e.target.value)} placeholder='time'/>
         <select value={type} onChange={(e) => setType(e.target.value)}>

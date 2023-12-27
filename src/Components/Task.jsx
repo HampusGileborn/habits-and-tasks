@@ -6,7 +6,7 @@ function Task({task, setDone, removeTask}) {
     <div >
             <h2>{task.titel}</h2>
             <h3>{task.description}</h3>
-            <h3>{task.time}</h3>
+            <h3>{task.time} minuter</h3>
             <h3>{task.type}</h3>
             <div>
               <input

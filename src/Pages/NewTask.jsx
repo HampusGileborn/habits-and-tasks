@@ -31,7 +31,6 @@ const [type, setType] = useState("");
         </select>
     </div>
     <div>
-        //lägg till obligatoriskt att fylla i allt
         <button onClick={() => {
             const uppdated = props.tasks;
             uppdated.push({id: uppdated.length + 1 , titel, description, time, type, done: false});

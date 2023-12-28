@@ -58,6 +58,24 @@ function App() {
       streakValue: 0,
       priority: 1,
     },
+    {
+      id: 4,
+      Title: "Städa",
+      streakValue: 0,
+      priority: 1,
+    },
+    {
+      id: 5,
+      Title: "Träna",
+      streakValue: 0,
+      priority: 1,
+    },
+    {
+      id: 6,
+      Title: "Salsa",
+      streakValue: 12,
+      priority: 3,
+    },
   ]);
   const addHabit = (newHabit) => {
     setHabits([...habits, newHabit]);
